@@ -36,6 +36,10 @@ body {
   padding-top: 20px;
 }
 
+img:hover{
+  opacity:0.9;
+}
+
 .header {
     color:antiquewhite;
     overflow:hidden;
