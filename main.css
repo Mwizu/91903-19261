@@ -7,7 +7,7 @@ body {
 /* Style the top navigation bar */
 .nav {
     padding:30px;
-    border: 1.5px solid #424242;
+    border-bottom: 1.5px solid #424242;
     overflow: hidden; /* Hide overflow */
     background-color: #f0e7d8; /* beige nav background color */
   }
@@ -46,3 +46,31 @@ img:hover{
     
 }
 
+.main {
+  width:100%;
+  display:grid;
+  place-content: center;
+  position: fixed;
+  display: table;
+}
+
+
+table {
+  width:80%;
+  overflow: scroll;
+  position: absolute;
+  background: #f0e7d8b6;
+  left:10%;
+  right:10%;
+  margin-top:3%;
+}
+
+tr, th, td {
+  border: 4px outset;
+  border-collapse: collapse;
+  border: 4px solid rgb(255, 255, 255, .2);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box;
+  text-align:center;
+  color:rgb(110, 110, 110);   
+}
