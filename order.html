@@ -14,7 +14,7 @@
     <title>點菜 Order</title>
 
     <body style="background:url(img/order.png);background-repeat:no-repeat; background-size:cover; background-attachment: fixed;
-    background-position: center; height: 100vh; backdrop-filter: blur(10px);"> <!--bg img-->
+    background-position: center; height: 100vh; backdrop-filter: blur(5px);"> <!--bg img-->
 
     </head>
 
@@ -36,18 +36,43 @@
        <div class="main">  <!--the transparent bkgd-->
         <table>
           <tr> <!--Row 1 has 4 columns in it-->
-            <td style="width:20%"><!--column 1--> 
-            <img src="images/sushi.png" alt="Image of 6 slices of salmon sushi."></td>
-            <td style="width:30%; height:auto"><!--column 2--> 
-              <h3 style="color:rgb(110, 110, 110); padding:10px"><b>Salmoni Sals</b></h3>
-              <p style="color:rgb(110, 110, 110); padding:10px">Delicious fabulous Salmon Sushi with the freshest salmon, solidest rice, and the seaest seaweed ever. Best combo in the world.</p></td>
-            <td style="width:20%"><!--column 3--> 
+            <td style="width:13%"><!--column 1--> 
+            <img src="images/sushi.png" alt="Image of siu mai."></td>
+            <td style="width:20%; height:auto"><!--column 2--> 
+              <h3><b>燒賣 Siu Mai</b></h3>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" maxlength="1">
+
+              <select name="肉 meat" id="meat">
+                <option value="fish">魚肉 Fish</option>
+                <option value="pork">豬肉 Pork</option>
+                <option value="prawn">蝦肉 Prawn</option>
+              </select>
+
+            </td>
             
-              <img src="images/tako_bom_bom.png" alt="Takoyaki named Tako Bom Bom."></td>
-            <td style="width:30%"><!--column 4--> 
-              <h3 style="color:rgb(110, 110, 110)"><b>Tako Bom Bom</b></h3>
-              <p style="color:rgb(110, 110, 110)">The best takoyaki in the world that goes bom bom in your mouth.</p>
+              <td style="width:13%"><!--column 3--> 
+              <img src="images/tako_bom_bom.png" alt="Image of bbq bun"></td>
+            <td style="width:20%"><!--column 4--> 
+              <h3><b>叉燒包 Barbecue Pork Bun</b></h3>
+              <input type="number" id="quantity" name="quantity" min="1" max="5" maxlength="1">
+            
+          
               </td>
+            
+
+            <td style="width:13%"><!--column 5--> 
+            <img src="images/sushi.png" alt="Image of 6 slices o."></td>
+            <td style="width:20%;"><!--column 6--> 
+                <h3><b>蝦餃 Shrimp Dumpling</b></h3>
+                <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </td>           
+              
+          </tr>
+
+          <tr>
+            <td></td>
+
+            <td></td>
           </tr>
           <!-- End of Row 1-->
     
@@ -57,3 +82,4 @@
     </body>
 
 </html>
+
