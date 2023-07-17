@@ -19,17 +19,7 @@
 
 
   <script>
-    function submitForm() {
-   // Get the first form with the name
-   // Usually the form name is not repeated
-   // but duplicate names are possible in HTML
-   // Therefore to work around the issue, enforce the correct index
-   var frm = document.getElementsByName('contact-form')[0];
-   frm.submit(); // Submit the form
-   frm.reset();  // Reset all form data
-   return false; // Prevent page refresh
-      
-      
+    
     function add() 
     {
       var num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, result; 
@@ -49,7 +39,17 @@
         result = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 + num11 + num12;
 
         document.getElementById("answer").value = result;
+  }
 
+    function submitForm() {
+   // Get the first form with the name
+   // Usually the form name is not repeated
+   // but duplicate names are possible in HTML
+   // Therefore to work around the issue, enforce the correct index
+   var frm = document.getElementsByName('contact-form')[0];
+   frm.submit(); // Submit the form
+   frm.reset();  // Reset all form data
+   return false; // Prevent page refresh
     }
   </script>
 
@@ -71,10 +71,14 @@
        </div>
           
        <div class="main">  <!--the transparent bkgd-->
+         
         <table>
+          
           <tr> <!--Row 1 has 4 columns in it-->
+            
             <td style="width:10%; height:7em;"><!--column 1--> 
             <img src="images/siumai.png" height="125em" alt="Image of siu mai."></td>
+            
             <td style="width:20%;"><!--column 2--> 
               <h3><b>燒賣 Siu Mai</b></h3>
              <p>$12/4pc</p><input type="number" id="input1" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
@@ -89,6 +93,7 @@
             
             <td style="width:10%;"><!--column 3--> 
             <img src="images/bbqpork.png" height="125em" width="100em" alt="Image of bbq pork"></td>
+            
             <td style="width:20%;"> <!--column 4--> 
               <h3><b>叉燒肉 Barbecue Pork</b></h3>
             <p>$20/12pc</p><input type="number" id="input2" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
@@ -109,6 +114,7 @@
             
             <td style="width:10%;"><!--column 3--> 
             <img src="images/xiaolongbao.png" height="125em"  alt="Image of 6 shrimp dumplings"></td>
+            
             <td style="width:20%;"><!--column 4-->
                 <h3><b>小籠包 Xiao Long Bao</b></h3>
             <p>$10/3pc</p>
@@ -117,6 +123,7 @@
 
             <td style="width:10%; height:7em;"><!--column 1--> 
               <img src="images/shrimpdumpling.png" height="125em" alt="Image of 6 shrimp dumplings"></td>
+            
            <td style="width:20%;"><!--column 2--> 
                 <h3><b>蝦餃 Shrimp Dumpling</b></h3>
            <p>$12/4pc</p>
@@ -124,11 +131,13 @@
 
             <td style="width:10%; "><!--column 5--> 
             <img src="images/bbqbun.png" height="125em" alt="Image of 6 shrimp dumplings"></td>
+             
             <td style="width:20%;"><!--column 6-->
                 <h3><b>叉燒包 Barbecue Pork Bun</b></h3>
             <p>$10/3pc</p>
               <input type="number" id="input6" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
             </td>
+            
           </tr>
           <!-- End of Row 2-->
 
@@ -188,13 +197,15 @@
           <tr>
             <td>
             <button onclick="add()"">Total</button>
-            <form action ="https://91903-19261.mwizu.repl.co/tyfyo.html" class="inline">
+            
             
   
             <p>$<input id="answer" size="5"/></p>
             </td>
               
             <td colspan="1000">
+
+            <form action ="https://91903-19261.mwizu.repl.co/tyfyo.html" class="inline">
               
               <p><b>地址 Address:</b> <input id="address" required maxlength="30"></p>
               <p><b>電話號碼 Phone Number:</b> <input type="number" required id="phone" maxlength="10"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></p>
