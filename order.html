@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 
-    <link rel="icon" href="https://stpierres.co.nz/images/20190329151614.png" alt="Credit: Sushi by St Pierres"/>
+    <link rel="icon" href="https://cdn.pixabay.com/photo/2022/11/05/12/12/steamed-bun-7571688_1280.png" alt="Logo"/>
     <title>點菜 Order</title>
 
     <body style="background:url(images/order.png);background-repeat:no-repeat; background-size:cover; background-attachment: fixed;
@@ -20,7 +20,7 @@
 
   <script>
     
-    function add() 
+    function add()  //total cost
     {
       var num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, result; 
         num1 = parseInt(document.getElementById("input1").value) * 12;
@@ -42,10 +42,7 @@
   }
 
     function submitForm() {
-   // Get the first form with the name
-   // Usually the form name is not repeated
-   // but duplicate names are possible in HTML
-   // Therefore to work around the issue, enforce the correct index
+  //input form 
    var frm = document.getElementsByName('contact-form')[0];
    frm.submit(); // Submit the form
    frm.reset();  // Reset all form data
@@ -57,7 +54,7 @@
 
 <body>
         
-        <div class="nav">
+        <div class="nav"> <!--navigation -->
             <a href="index.html" class="left"><img src="images/logo.png" height="69px" alt="好飲茶 標識 Hou Yum Cha Logo"></a>
             <div class="navright">
                 <a href="contactus.html">聯繫我們 Contact Us</a>  
@@ -70,7 +67,7 @@
             
        </div>
           
-       <div class="main">  <!--the transparent bkgd-->
+       <div class="main" style="overflow-x:auto;">  <!--the transparent bkgd-->
          
         <table>
           
@@ -200,13 +197,15 @@
             
             
   
-            <p>$<input id="answer" size="5"/></p>
+            <p>$<input id="answer" size="5" readonly="readonly"/></p>
             </td>
               
             <td colspan="1000">
 
+      <!--thank you for your order page after pressing submit-->
             <form action ="https://91903-19261.mwizu.repl.co/tyfyo.html" class="inline">
-              
+
+      <!--input form-->
               <p><b>地址 Address:</b> <input id="address" required maxlength="30"></p>
               <p><b>電話號碼 Phone Number:</b> <input type="number" required id="phone" maxlength="10"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></p>
               <input type="submit" value="Submit" id="btnsubmit" onclick="submitForm()">
@@ -216,6 +215,7 @@
 
           </tr>
         </table>
+         
         </div>
 </body>
 
