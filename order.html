@@ -10,63 +10,59 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 
-    <link rel="icon" href="https://cdn.pixabay.com/photo/2022/11/05/12/12/steamed-bun-7571688_1280.png" alt="Logo"/>
+    <link rel="icon" href="img/logo.png">
     <title>點菜 Order</title>
 
-    <body style="background:url(images/order.png);background-repeat:no-repeat; background-size:cover; background-attachment: fixed;
+    <script>
+      
+      function add()  //total cost
+      {
+        var num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, result; 
+          num1 = parseInt(document.getElementById("input1").value) * 12;
+          num2 = parseInt(document.getElementById("input2").value) * 20;
+          num3 = parseInt(document.getElementById("input3").value) * 10;
+          num4 = parseInt(document.getElementById("input4").value) * 10;
+          num5 = parseInt(document.getElementById("input5").value) * 12;
+          num6 = parseInt(document.getElementById("input6").value) * 10;
+          num7 = parseInt(document.getElementById("input7").value) * 10;
+          num8 = parseInt(document.getElementById("input8").value) * 12;
+          num9 = parseInt(document.getElementById("input9").value) * 10;
+          num10 = parseInt(document.getElementById("input10").value) * 10;
+          num11 = parseInt(document.getElementById("input11").value) * 12;
+          num12 = parseInt(document.getElementById("input12").value) * 18;
+        
+          result = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 + num11 + num12;
+  
+          document.getElementById("answer").value = result;
+    }
+  
+      function submitForm() {
+    //input form 
+     var frm = document.getElementsByName('contact-form')[0];
+     frm.submit(); // Submit the form
+     frm.reset();  // Reset all form data
+     return false; // Prevent page refresh
+      }
+    </script>
+
+  </head>
+
+  <body style="background:url(img/order.png);background-repeat:no-repeat; background-size:cover; background-attachment: fixed;
     background-position: center; height: 100vh; backdrop-filter: blur(5px);"> <!--bg img-->
 
-
-
-  <script>
-    
-    function add()  //total cost
-    {
-      var num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, result; 
-        num1 = parseInt(document.getElementById("input1").value) * 12;
-        num2 = parseInt(document.getElementById("input2").value) * 20;
-        num3 = parseInt(document.getElementById("input3").value) * 10;
-        num4 = parseInt(document.getElementById("input4").value) * 10;
-        num5 = parseInt(document.getElementById("input5").value) * 12;
-        num6 = parseInt(document.getElementById("input6").value) * 10;
-        num7 = parseInt(document.getElementById("input7").value) * 10;
-        num8 = parseInt(document.getElementById("input8").value) * 12;
-        num9 = parseInt(document.getElementById("input9").value) * 10;
-        num10 = parseInt(document.getElementById("input10").value) * 10;
-        num11 = parseInt(document.getElementById("input11").value) * 12;
-        num12 = parseInt(document.getElementById("input12").value) * 18;
-      
-        result = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10 + num11 + num12;
-
-        document.getElementById("answer").value = result;
-  }
-
-    function submitForm() {
-  //input form 
-   var frm = document.getElementsByName('contact-form')[0];
-   frm.submit(); // Submit the form
-   frm.reset();  // Reset all form data
-   return false; // Prevent page refresh
-    }
-  </script>
-
-</head>
-
-<body>
         
-        <div class="nav"> <!--navigation -->
-            <a href="index.html" class="left"><img src="images/logo.png" height="69px" alt="好飲茶 標識 Hou Yum Cha Logo"></a>
+        <nav>
+            <!--<div class="navright">-->
+              <a href="index.html" class="left"><img src="images/logo.png" height="69" alt="好飲茶 標識 Hou Yum Cha Logo"></a>
             <div class="navright">
-                <a href="contactus.html">聯繫我們 Contact Us</a>  
-                <a href="order.html">點菜 Order</a>
-                <a href="booking.html">預訂 Booking</a>
-                <a href="index.html"> 主頁 Homepage</a>
+              <a href="index.html"> 主頁 Homepage</a>
+              <a href="booking.html">預訂 Booking</a>
+              <a href="order.html">點菜 Order</a>
+              <a href="contactus.html">聯繫我們 Contact Us</a>  
             </div>
-                
-          </div>
             
-       </div>
-          
+        </nav>
+                    
        <div class="main" style="overflow-x:auto;">  <!--the transparent bkgd-->
          
         <table>
@@ -74,11 +70,11 @@
           <tr> <!--Row 1 has 4 columns in it-->
             
             <td style="width:10%; height:7em;"><!--column 1--> 
-            <img src="images/siumai.png" height="125em" alt="Image of siu mai."></td>
+            <img src="img/siumai.png" height="125" alt="Image of siu mai."></td>
             
             <td style="width:20%;"><!--column 2--> 
               <h3><b>燒賣 Siu Mai</b></h3>
-             <p>$12/4pc</p><input type="number" id="input1" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+             <p>$12/4pc</p><input type="number" id="input1" min="0" max="5"  value="0" style="width: 25px;">
 
               <select name="肉 meat" id="meat">
                 <option value="fish">魚肉 Fish</option>
@@ -89,20 +85,20 @@
             </td>
             
             <td style="width:10%;"><!--column 3--> 
-            <img src="images/bbqpork.png" height="125em" width="100em" alt="Image of bbq pork"></td>
+            <img src="img/bbqpork.png" height="125" width="100" alt="Image of bbq pork"></td>
             
             <td style="width:20%;"> <!--column 4--> 
               <h3><b>叉燒肉 Barbecue Pork</b></h3>
-            <p>$20/12pc</p><input type="number" id="input2" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+            <p>$20/12pc</p><input type="number" id="input2" min="0" max="5"  value="0" style="width: 25px;">
             </td>
 
             <td style="width:10%;"><!--column 5--> 
-            <img src="images/eggtart.png"  height="125em" alt="Image of bbq bun"></td>
+            <img src="img/eggtart.png"  height="125" alt="Image of bbq bun"></td>
             <td style="width:20%;"><!--column 6--> 
             <h3><b>蛋撻 Egg Tart</b></h3>
               
            <p>$10/3pc</p>
-            <input type="number" id="input3" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+            <input type="number" id="input3" min="0" max="5"  value="0" style="width: 25px;">
             </td>     
 
           </tr>
@@ -110,29 +106,29 @@
           <tr>  
             
             <td style="width:10%;"><!--column 3--> 
-            <img src="images/xiaolongbao.png" height="125em"  alt="Image of 6 shrimp dumplings"></td>
+            <img src="img/dumpling.jpg" height="125"  alt="Image of dumplings"></td>
             
             <td style="width:20%;"><!--column 4-->
-                <h3><b>小籠包 Xiao Long Bao</b></h3>
+                <h3><b>餃子 Dumpling</b></h3>
             <p>$10/3pc</p>
-              <input type="number" id="input4" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+              <input type="number" id="input4" min="0" max="5"  value="0" style="width: 25px;">
             </td>
 
             <td style="width:10%; height:7em;"><!--column 1--> 
-              <img src="images/shrimpdumpling.png" height="125em" alt="Image of 6 shrimp dumplings"></td>
+              <img src="img/shrimpdumpling.png" height="125" alt="Image of 4 shrimp dumplings"></td>
             
            <td style="width:20%;"><!--column 2--> 
                 <h3><b>蝦餃 Shrimp Dumpling</b></h3>
            <p>$12/4pc</p>
-              <input type="number" id="input5" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;"> 
+              <input type="number" id="input5" min="0" max="5"  value="0" style="width: 25px;"> 
 
             <td style="width:10%; "><!--column 5--> 
-            <img src="images/bbqbun.png" height="125em" alt="Image of 6 shrimp dumplings"></td>
+            <img src="img/bbqbun.png" height="125" alt="Image of 6 bbq bun"></td>
              
             <td style="width:20%;"><!--column 6-->
                 <h3><b>叉燒包 Barbecue Pork Bun</b></h3>
             <p>$10/3pc</p>
-              <input type="number" id="input6" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+              <input type="number" id="input6" min="0" max="5"  value="0" style="width: 25px;">
             </td>
             
           </tr>
@@ -141,25 +137,25 @@
           <tr>
 
             <td style="width:10%; height:7em;"><!--column 1--> 
-              <img src="images/meatball.png" height="125em"  alt="Image of 6 shrimp dumplings"></td>
+              <img src="img/meatball.png" height="125"  alt="Image of 6 shrimp dumplings"></td>
            <td style="width:20%;"><!--column 2--> 
                 <h3><b>肉丸 Meatball</b></h3>
             <p>$10/3pc</p>
-              <input type="number" id="input7" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">  
+              <input type="number" id="input7" min="0" max="5"  value="0" style="width: 25px;">  
             
             <td style="width:10%;"><!--column 3--> 
-            <img src="images/pineapplebread.png" height="125em" alt="Image of 6 shrimp dumplings"></td>
+            <img src="img/pineapplebread.png" height="125" alt="Image of 6 shrimp dumplings"></td>
             <td style="width:20%;"><!--column 4-->
                 <h3><b>菠蘿包 Pineapple Bread</b></h3>
             <p>$12/4pc</p>
-              <input type="number" id="input8" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+              <input type="number" id="input8" min="0" max="5"  value="0" style="width: 25px;">
 
             <td style="width:10%;"><!--column 5--> 
-            <img src="images/springrolls.png" height="125em"  alt="Image of 6 shrimp dumplings"></td>
+            <img src="img/springrolls.png" height="125"  alt="Image of 6 shrimp dumplings"></td>
             <td style="width:20%;"><!--column 6-->
-                <h3><b>春捲 Spring rolls</b></h3>
+                <h3><b>春捲 Spring Rolls</b></h3>
              <p>$10/4pc</p>
-              <input type="number" id="input9" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+              <input type="number" id="input9" min="0" max="5" value="0" style="width: 25px;">
             </td>
           </tr>
           <!-- End of Row 3-->
@@ -167,56 +163,51 @@
           <tr>
 
             <td style="width:10%; height:7em;"><!--column 1--> 
-              <img src="images/ricenoodlerolls.png" height="125em" alt="Image of 6 shrimp dumplings"></td>
+              <img src="img/ricenoodlerolls.png" height="125" alt="Image of 6 shrimp dumplings"></td>
            <td style="width:20%; height:10em;"><!--column 2--> 
-                <h3><b>腸粉 Rice noodle rolls</b></h3>
+                <h3><b>腸粉 Rice Noodle Rolls</b></h3>
            <p>$10/3pc</p>
-              <input type="number" id="input10" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+              <input type="number" id="input10" min="0" max="5" value="0" style="width: 25px;">
             </td>    
             
             <td style="width:10%;"><!--column 3--> 
-            <img src="images/turnipcake.png" height="125em" alt="Image of 6 shrimp dumplings"></td>
+            <img src="img/turnipcake.png" height="125" alt="Image of 6 shrimp dumplings"></td>
             <td style="width:20%;"><!--column 4-->
                 <h3><b>蘿蔔糕 Turnip Cake</b></h3>
             <p>$12/4pc</p>
-              <input type="number" id="input11" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+              <input type="number" id="input11" min="0" max="5"  value="0" style="width: 25px;">
 
             <td style="width:10%; "><!--column 5--> 
-            <img src="images/chickenfeet.png" height="125em" alt="Image of 6 shrimp dumplings"></td>
+            <img src="img/chickenfeet.png" height="125" alt="Image of 6 shrimp dumplings"></td>
             <td style="width:20%;"><!--column 6-->
-                <h3><b>鳳爪 Chicken feet</b></h3>
+                <h3><b>鳳爪 Chicken Feet</b></h3>
             <p>$18/bowl</p>
-              <input type="number" id="input12" size="5" min="0" max="5" maxlength="1" value="0" style="width: 25px;">
+              <input type="number" id="input12" min="0" max="5"  value="0" style="width: 25px;">
             </td>
           </tr>
           <!-- End of Row 4-->
 
           <tr>
             <td>
-            <button onclick="add()">Total</button>
-            
-            
-  
-            <p>$<input id="answer" size="5" readonly="readonly"/></p>
+              <button onclick="add()">Total</button>
+              <p>$<input id="answer" readonly="readonly"></p>
             </td>
-              
-            <td colspan="1000">
+            <td co1lspan="5">
 
-      <!--thank you for your order page after pressing submit-->
-            <form action ="https://91903-19261.mwizu.repl.co/tyfyo.html" class="inline">
-
-      <!--input form-->
-              <p><b>地址 Address:</b> <input id="address" required maxlength="30"></p>
-              <p><b>電話號碼 Phone Number:</b> <input type="number" required id="phone" maxlength="10"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></p>
-              <input type="submit" value="Submit" id="btnsubmit" onclick="submitForm()">
-              <!-- <input type="button"  -->
+              <!--thank you for your order page after pressing submit-->
+              <form action ="https://91903-19261.mwizu.repl.co/tyfyo.html" class="inline">
+                
+                <!--input form-->
+                <p><b>地址 Address:</b> <input id="address" required maxlength="30"></p>
+                <p><b>電話號碼 Phone Number:</b> <input type="number" required id="phone" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"></p>
+                <input type="submit" value="Submit" id="btnsubmit" onclick="submitForm()">
+                <!-- <input type="button"  -->            
+              </form>
             </td>
-            
-
           </tr>
-        </table>
-         
+         </table>
         </div>
+
 </body>
 
 </html>

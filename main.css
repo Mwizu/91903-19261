@@ -1,53 +1,54 @@
 /*main from pc*/
 
 body {
-    color:aliceblue;
+    color:#dbdbdb;
     margin:0px;
-
 }
 
 
-
-@media only screen and (max-width: 800px) { ... }
-
-
 /* Style the top navigation bar */
-.nav {
-    width:100%;
-    padding:30px;
+
+nav {
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:45px;
     border-bottom: 1.5px solid #424242;
+    color: rgb(236, 219, 192); /* Beige text color */
     overflow: hidden; /* Hide overflow */
-    background-color: #f0e7d8; /* beige nav background color */
+    background-color: #563c10; /* beige nav background color */
   }
   
 /* Style the navigation bar links */
-.nav a {
-    float: right;  /*Make sure that the links stay side-by-side */
-    display: block; /* Change the display to block, for responsive reasons (see below) */
-    color: rgb(110, 110, 110); /* White text color */
-    padding: 14px 20px; /* Add some padding */
+nav a {
+    float: left;  /*Make sure that the links stay side-by-side */
+    /*display: block;  Change the display to block */
+    color: rgb(236, 219, 192); /* Beige text color */
+    text-align: center;
+    padding: 14px 20px; 
     font-size:20px;
     text-decoration: none; /* Remove underline */
   }
   
   /* Change color on hover/mouse-over */
-.nav a:hover {
-    color: rgb(44, 44, 44); /* Black text color */
+nav a:hover {
+    color: rgb(213, 194, 174); /* Darker text color when hovered */
   }
   
 /* Right-aligned link */
-.nav a.left {
-    float: left; /* Float a link to the right */
-  }
 
 /*nav make right side */
+
+
 .navright {
-  padding-top: 20px;
+    float: right;  /*Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block */  
+    font-size:20px;
+    padding-top: 20px;  /*space between texts and borders*/
+    padding-left:20px; 
+    padding-right:30px;
+    text-decoration: none; /* Remove underline */
 }
 
-.navright a. {
-  float:right;
-}
 
 img:hover{
   opacity:0.9;
@@ -73,7 +74,7 @@ table {
   width:80%;
   overflow: scroll;
   position: absolute;
-  background: #f0e7d8b6;
+  background: #5c4b2eb6;
   left:10%;
   right:10%;
   margin-top:3%;
@@ -87,8 +88,7 @@ tr, th, td {
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box;
   text-align:center;
-  color:rgb(110, 110, 110);   
-  
+  color:antiquewhite;   
 }
 
 
