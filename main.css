@@ -1,15 +1,11 @@
-/*main from pc*/
-
 body {
     color:#dbdbdb;
     margin:0px;
 }
 
-
 /* Style the top navigation bar */
-
 nav {
-    padding-top:25px;
+    padding-top:25px; 
     padding-bottom:25px;
     padding-left:45px;
     border-bottom: 1.5px solid #424242;
@@ -24,21 +20,17 @@ nav a {
     /*display: block;  Change the display to block */
     color: rgb(236, 219, 192); /* Beige text color */
     text-align: center;
-    padding: 14px 20px; 
+    padding: 14px 20px; /*space between texts and border*/
     font-size:20px;
     text-decoration: none; /* Remove underline */
   }
   
-  /* Change color on hover/mouse-over */
+/* Change color on hover/mouse-over */
 nav a:hover {
     color: rgb(213, 194, 174); /* Darker text color when hovered */
   }
   
-/* Right-aligned link */
-
-/*nav make right side */
-
-
+/* Navigation links */
 .navright {
     float: right;  /*Make sure that the links stay side-by-side */
     display: block; /* Change the display to block */  
@@ -46,49 +38,45 @@ nav a:hover {
     padding-top: 20px;  /*space between texts and borders*/
     padding-left:20px; 
     padding-right:30px;
+    padding-bottom:10px;
     text-decoration: none; /* Remove underline */
 }
 
-
+/* when hovering over images, lover opacity to show the user that they are hovering over the image */
 img:hover{
   opacity:0.9;
 }
 
-.header {
-    color:antiquewhite;
-    overflow:hidden;
-    
-}
-
-.main {
+main {
   width:100%;
-  display:grid;
+  display:grid; 
   place-content: center;
-  position: fixed;
-  display: table;
+  position: fixed; 
+  display: table; /*order table */
+  padding-bottom:50em;
   
 }
 
-
+/*order table */
 table {
   width:80%;
   overflow: scroll;
   position: absolute;
   background: #5c4b2eb6;
   left:10%;
-  right:10%;
-  margin-top:3%;
-
+  right:10%; 
+  margin-top:3%; /* space between top of website and table*/
 }
 
 tr, th, td {
   border: 4px outset;
   border-collapse: collapse;
-  border: 4px solid rgb(255, 255, 255, .2);
+  border: 4px solid rgb(255, 255, 255, .2); /*border between each box*/
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box;
   text-align:center;
   color:antiquewhite;   
+  
 }
 
 
