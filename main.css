@@ -43,7 +43,16 @@ main { /*main content */
   text-align:center;
 }
 
-
+/* Navigation links */
+.navright {
+float: right; /*Make sure that the links stay on the right*/
+display: block; /* Change the display to block */
+font-size:20px;
+padding-top: 20px; /*space between texts and borders*/
+padding-left:20px;
+padding-right:30px;
+text-decoration: none; /* Remove underline */
+}
 
 .box { /*css flex box */
   display:inline-block;
