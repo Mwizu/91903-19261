@@ -30,32 +30,22 @@ nav a:hover {
     color: rgb(213, 194, 174); /* Darker text color when hovered */
   }
   
-/* Navigation links */
-.navright {
-    float: right;  /*Make sure that the links stay on the right*/
-    display: block; /* Change the display to block */  
-    font-size:20px;
-    padding-top: 20px;  /*space between texts and borders*/
-    padding-left:20px; 
-    padding-right:30px;
-    text-decoration: none; /* Remove underline */
-}
 
 /* when hovering over images, lover opacity to show the user that they are hovering over the image */
 img:hover{
   opacity:0.9;
 }
 
-main {
+main { /*main content */
   width:100%;
-  padding-bottom:5em;
+  padding-bottom:3em;
   align-content:center;
   text-align:center;
 }
 
 
 
-.box {
+.box { /*css flex box */
   display:inline-block;
   flex:auto;
   padding:10px 30px;
@@ -65,18 +55,18 @@ main {
   min-width:300px;
 }
 
-.box img {
+.box img { /*img in flex boxes */
   height:8em;
   width:7em;
   margin:5px;
 }
 
-.text {
+.text { /*texts in flex boxes */
   display:inline-block;
   max-width:150px;
 }
 
-.details{
-  margin-top: 50px;
+.details{ /*form in order page */
+  margin-top: 30px;
   width: 50%;
 }
