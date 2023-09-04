@@ -11,13 +11,12 @@ nav {
     border-bottom: 1.5px solid #424242;
     color: rgb(236, 219, 192); /* Beige text color */
     overflow: hidden; /* Hide overflow */
-    background-color: #563c10; /* beige nav background color */
+    background-color: #563c10; /* nav background color */
   }
   
 /* Style the navigation bar links */
 nav a {
     float: left;  /*Logo on left*/
-    /*display: block;  Change the display to block */
     color: rgb(236, 219, 192); /* Beige text color */
     text-align: center;
     padding: 14px 20px; /*space between texts and border*/
@@ -45,13 +44,13 @@ main { /*main content */
 
 /* Navigation links */
 .navright {
-float: right; /*Make sure that the links stay on the right*/
-display: block; /* Change the display to block */
-font-size:20px;
-padding-top: 20px; /*space between texts and borders*/
-padding-left:20px;
-padding-right:30px;
-text-decoration: none; /* Remove underline */
+  float: right; /*Make sure that the links stay on the right*/
+  display: block; /* Change the display to block */
+  font-size:20px;
+  padding-top: 20px; /*space between texts and borders*/
+  padding-left:20px;
+  padding-right:30px;
+  text-decoration: none; /* Remove underline */
 }
 
 .box { /*css flex box */
@@ -78,4 +77,30 @@ text-decoration: none; /* Remove underline */
 .details{ /*form in order page */
   margin-top: 30px;
   width: 50%;
+}
+
+
+footer { /* footer */
+  padding-top:3px;
+  width:100%;
+  bottom: 0;
+  background-color:#533923;
+  color:white;
+}
+
+.order {
+    text-align: center;
+}
+
+footer:not(.order) {
+    position: fixed;
+}
+
+footer a {
+  color:#e7d7c6;
+  text-decoration:none;
+}
+
+footer a:hover{
+ color:#c7c6c6;
 }
